@@ -5,9 +5,16 @@ import eslintConfigPrettier from 'eslint-config-prettier';
 
 /** @type {import('eslint').Linter.Config[]} */
 export default [
-  { files: ['**/*.{js,mjs,cjs,ts,mts}'] },
-  { languageOptions: { globals: globals.browser } },
+  { ignores: ['**/.idea/', '**/.turbo/', '**/.assetpack/', '**/dist/'] },
+  {
+    languageOptions: {
+      globals: {
+        ...globals.browser,
+        ...globals.node,
+      },
+    },
+  },
   pluginJs.configs.recommended,
-  ...tseslint.configs.recommended,
   eslintConfigPrettier,
+  ...tseslint.configs.recommended,
 ];

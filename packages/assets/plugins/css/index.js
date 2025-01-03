@@ -14,8 +14,7 @@ export function css(options = {}) {
         compressedCssAsset.buffer = Buffer.from(css.styles);
 
         return [compressedCssAsset];
-      }
-      catch (e) {
+      } catch {
         Logger.warn(`[AssetPack][css] Failed to compress css file: ${asset.path}`);
 
         return [asset];

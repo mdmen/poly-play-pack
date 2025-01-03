@@ -1,4 +1,4 @@
-import { compress } from "@assetpack/core/image";
+import { compress } from '@assetpack/core/image';
 import { css } from './src/plugins/css/index.js';
 
 export default {
@@ -10,6 +10,6 @@ export default {
       jpg: { quality: 80 },
       png: { quality: 90 },
       webp: { quality: 80 },
-    })
+    }),
   ],
 };
