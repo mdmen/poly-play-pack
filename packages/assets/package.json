@@ -1,0 +1,16 @@
+{
+  "name": "@poly-play-pack/assets",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "serve": "http-server src",
+    "build": "assetpack"
+  },
+  "packageManager": "pnpm@9.15.1",
+  "devDependencies": {
+    "@assetpack/core": "^1.2.3",
+    "clean-css": "^5.3.3",
+    "http-server": "^14.1.1"
+  }
+}

@@ -1,0 +1,74 @@
+@layer reset, common;
+
+@layer reset {
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    min-height: 100vh;
+  }
+
+  img,
+  picture,
+  video,
+  canvas,
+  svg {
+    display: block;
+    max-width: 100%;
+  }
+
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+  }
+
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    overflow-wrap: break-word;
+  }
+}
+
+@layer common {
+  @font-face {
+    font-family: 'test';
+    src: url('test.woff2') format('woff2')
+  }
+
+  :root {
+    --color-primary: #000;
+    --color-secondary: #fff;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --color-primary: #fff;
+      --color-secondary: #000;
+    }
+  }
+
+  body {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeSpeed;
+    font-family: 'test', system-ui, Arial, sans-serif;
+    font-size: 1.25rem;
+  }
+}
