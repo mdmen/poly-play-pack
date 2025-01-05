@@ -35,3 +35,7 @@ dist
 # Misc
 .assetpack
 .turbo
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts

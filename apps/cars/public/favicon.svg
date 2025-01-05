@@ -1,0 +1,19 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    #light {
+      display: none;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      #light {
+        display: initial;
+      }
+
+      #dark {
+        display: none;
+      }
+    }
+  </style>
+  <text y=".9em" font-size="90" id="dark">🚙</text>
+  <text y=".9em" font-size="90" id="light">🚗</text>
+</svg>
