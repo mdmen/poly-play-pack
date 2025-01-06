@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "serve": "http-server src",
+    "dev": "http-server src -p 8080",
     "build": "assetpack"
   },
   "devDependencies": {
