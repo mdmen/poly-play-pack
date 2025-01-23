@@ -1,4 +1,4 @@
-@layer reset, common;
+@layer reset, base;
 
 @layer reset {
 
@@ -47,7 +47,7 @@
   }
 }
 
-@layer common {
+@layer base {
   @font-face {
     font-family: 'test';
     src: url('test.woff2') format('woff2')

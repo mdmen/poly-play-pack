@@ -1,9 +1,9 @@
 import { compress } from '@assetpack/core/image';
-import { css } from './src/plugins/css/index.js';
+import { css } from './plugins/css/index.js';
 
 export default {
-  entry: './src',
-  output: './build',
+  entry: './public',
+  output: './dist',
   pipes: [
     css(),
     compress({

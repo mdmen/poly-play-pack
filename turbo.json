@@ -3,11 +3,13 @@
   "ui": "tui",
   "tasks": {
     "build": {
-      "dependsOn": ["^build"]
+      "dependsOn": ["^build"],
+      "env": ["ASSETS_URL"]
     },
     "dev": {
       "persistent": true,
-      "inputs": ["$TURBO_DEFAULT$", ".env"]
+      "inputs": ["$TURBO_DEFAULT$", ".env"],
+      "env": ["ASSETS_URL"]
     }
   }
 }
